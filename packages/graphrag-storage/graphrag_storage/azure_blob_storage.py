@@ -192,7 +192,7 @@ class AzureBlobStorage(Storage):
                 coding = encoding or self._encoding
                 blob_client.upload_blob(value.encode(coding), overwrite=True)
         except Exception:
-            logger.exception("Error setting key %s: %s", key)
+            logger.exception("Error setting key %s", key)
 
     async def has(self, key: str) -> bool:
         """Check if a key exists in the blob."""

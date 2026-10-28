@@ -1,0 +1,4 @@
+{
+  "type": "patch",
+  "description": "Fix AzureBlobStorage.set error logging so a failed upload logs the key and traceback instead of raising a logging format error."
+}
